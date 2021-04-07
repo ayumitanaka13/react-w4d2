@@ -72,7 +72,6 @@ const Exercise2 = () => {
 
     interface City {
         coords: Coords,
-        name: string,
     }
     
     const montreal = {
