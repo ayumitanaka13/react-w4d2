@@ -16,13 +16,12 @@ const Exercise2 = () => {
     interface CartItem{
         id: number;
         title: string;
-        variantId: number;
+        variantId?: number;
     }
 
     const shoes = {
         id: 1,
         title: 'Concrete shoes',
-        variantId: 1
     }
   
     const addToCart = (item:CartItem):void => {
@@ -37,8 +36,8 @@ const Exercise2 = () => {
     //   `name` and `age` member properties.
   
     interface Person {
-      name: string,
-      age: number
+      name: string;
+      age: number;
     }
   
     const jane = {
@@ -61,17 +60,17 @@ const Exercise2 = () => {
   
     // [do not edit] (pretend this is coming from external `foo.d.ts` lib)
     interface City {
-      name: string
+      name: string;
     }
     // [/do not edit]
   
     interface Coords {
-        latitude: number,
-        longitude: number
+      latitude: number;
+      longitude: number;
     }
 
     interface City {
-        coords: Coords,
+      coords: Coords;
     }
     
     const montreal = {
@@ -102,13 +101,13 @@ const Exercise2 = () => {
         `${getCityInfo(montreal)} \n\n ${getCityInfo(tampa)}`
     )
 
-  
+
     // ======== Exercise 2.4 ========
     // The purpose of this exercise is simply to illustrate a use of `readonly`
   
     interface UserSchema {
-      readonly id: number
-      name: string
+      readonly id: number;
+      name: string;
     }
   
     class User implements UserSchema {
