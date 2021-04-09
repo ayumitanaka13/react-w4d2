@@ -44,8 +44,15 @@ const Exercise5 = () => {
       constructor(public title: string, public salary: number) {
       }
     }
+
+    // class Contractor extends Employee {
+    //   constructor(title: string, salary: number, public time: number) {
+    //     super(title, salary)
+    //   }
+    // }
   
     const employee = new Employee('Engineer', 100000)
+    // const contractor = new Contractor('Software Engineer', 10000, 30)
   
     console.log(
       '[Exercise 5.3]',
